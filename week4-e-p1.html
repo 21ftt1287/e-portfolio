@@ -42,7 +42,8 @@ DO NOT CHANGE THE values of the NAME attributes in each element!!!
 -->
 
 <h3>Enter A WORD at least 6 characters. The word must not contain lowercase or uppercase  t, h, s </h3>
-<input type="text" pattern="[a-g A-G i-r I-R u-z U-Z]{6,}" name="word"><br>
+<!-- <input type="text" pattern="[a-g A-G i-r I-R u-z U-Z]{6,}" name="word"><br> -->
+<input type="text" pattern="[^(t|T|h|H|s|S)]{6,}" name="word"><br>
 
 <h3>Replace the min, max and step attributes to equivalent pattern. change type to text</h3>
 <input type="text" name="numbers" pattern="(3|6|9|12)"><br>

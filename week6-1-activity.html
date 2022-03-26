@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+		<style type="text/css">
+		/*using id, element, class, multiple selector ONLY*/
+		img.Size{width: 300px; height: 200px;}
+		/*img.border{border: 3px solid turquoise;}*/
+
+		img[src^="assets/images/my"]{border: 3px solid turquoise;} /*//forcing only the imgage that is in my file to have a border*/
+
+
+		input.nice{font-family: courier new; width: 200px; border: 1px solid navy; display: block;}
+		p#darkcyan{font-size: 2em; color: darkcyan;}
+		div,h3#block{font-family: courier new; border: 1px solid;}
+
+		/*ol#list{color: darkcyan; font-style: italic;}*/
+
+		li:nth-child(3n){font-style: italic;} /*//multiple of 3*/
+
+		div{width: 150px; height: 100pxx; padding: 20px;}
+		/*#d1{padding-left: 50px;}
+		#d2{margin-left: 25px;}*/
+		#d1{padding-left: 50px; box-sizing: border-box;}
+		/*#d2{visibility: hidden;}*/
+		#d2{display: none;}
+		#d3{}
+
+
+		</style>
+	
+</head>
+<body>
+<p id="darkcyan">Here is my favorite pictures</p> <!-- 2em darkcyan -->
+
+<!-- all images 300x200 -->
+<img src="assets/images/th/t-1.jpg" alt="" class="Size">
+<img src="assets/images/my/m-1.jpg" alt="" class="Size border"> <!-- 3px solid turquoise -->
+<img src="assets/images/my/m-2.jpg" alt="" class="Size border"> <!-- 3px solid turquoise -->
+<img src="assets/images/th/t-2.jpg" alt="" class="Size">
+<p>Just a form</p>
+<form action="">
+	<input type="text"  placeholder="name" name="fullname" class="nice"> <!-- courier new, width 200px, border 1px solid, border color navy -->
+	<input type="text"  placeholder="fone" name="fone" class="nice"><!-- courier new, width 200px, border 1px solid, border color navy -->
+	<input type="email"  placeholder="email" name="email" class="nice"> <!-- width 200px border 1px solid, border color navy -->
+	<input type="number" name="captcha" placeholder="5x2" class="nice">  <!-- width 200px border 1px solid, border color navy -->
+	<input type="submit">
+</form>
+<h3 id="block">here is list of my songs</h3> <!-- courier new border 1px solid -->
+<ol> 
+<!-- 	all list will be darkcyan -->
+	<li>Dimana janji mu dulu</li>
+	<li >Insan ku sayang menghilang</li> <!-- italic -->
+	<li>Resah kerinduan</li>
+	<li >Mengusung rindu</li> <!-- italic -->
+	<li>Malam semakin dingin</li>
+	<li >Haruskah kita berpisah</li><!-- italic -->
+	<li>Salah apa aku</li>
+	<li >Salam terakhir</li><!-- italic -->
+</ol>
+
+<p>can you tell the difference?</p>
+<div id="d1">Im a border-box</div>
+<div id="d2">Im a content-box</div>
+<div id="d3">Another div</div>
+
+
+</body>
+</html>
